@@ -35,16 +35,23 @@
         <header id="header" class="u-header u-header-left-aligned-nav">
             <div class="u-header__section">
                 <!-- Topbar -->
-                <div class="u-header-topbar py-2 d-none d-xl-block">
+                <div class="u-header-topbar bg-gray-1 border-0 py-2 d-none d-xl-block">
                     <div class="container">
                         <div class="d-flex align-items-center">
                             <div class="topbar-left">
-                                <a href="#" class="text-gray-110 font-size-13 hover-on-dark">Welcome to Worldwide Electronics Store</a>
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item u-header-topbar__nav-item u-header-topbar__nav-item-no-border mr-0">
+                                        <a href="tel:+060800801858" class="u-header-topbar__nav-link"><i class="ec ec-phone text-primary mr-1"></i> +060 (800) 801-858</a>
+                                    </li>
+                                    <li class="list-inline-item u-header-topbar__nav-item u-header-topbar__nav-item-no-border">
+                                        <a href="mailto:info@electro.com" class="u-header-topbar__nav-link"><i class="ec ec-mail text-primary mr-1"></i> info@electro.com</a>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="topbar-right ml-auto">
                                 <ul class="list-inline mb-0">
                                     <li class="list-inline-item mr-0 u-header-topbar__nav-item u-header-topbar__nav-item-border">
-                                        <a href="../home/contact-v2.html" class="u-header-topbar__nav-link"><i class="ec ec-map-pointer mr-1"></i> Store Locator</a>
+                                        <a href="#" class="u-header-topbar__nav-link"><i class="ec ec-map-pointer mr-1"></i> Store Locator</a>
                                     </li>
                                     <li class="list-inline-item mr-0 u-header-topbar__nav-item u-header-topbar__nav-item-border">
                                         <a href="../shop/track-your-order.html" class="u-header-topbar__nav-link"><i class="ec ec-transport mr-1"></i> Track Your Order</a>
@@ -103,7 +110,7 @@
                 <!-- End Topbar -->
 
                 <!-- Logo-Search-header-icons -->
-                <div class="py-2 py-xl-5 bg-primary-down-lg">
+                <div class="py-2 py-xl-4 bg-primary-down-lg">
                     <div class="container my-0dot5 my-xl-0">
                         <div class="row align-items-center">
                             <!-- Logo-offcanvas-menu -->
@@ -506,8 +513,12 @@
                             </div>
                             <!-- End Search Bar -->
                             <!-- Header Icons -->
-                            <div class="col col-xl-auto text-right text-xl-left pl-0 pl-xl-3 position-static">
-                                <div class="d-inline-flex">
+                            <div class="col col-xl-auto text-right text-xl-left pl-0 pl-xl-3 position-static d-flex">
+                                <div class="d-none mr-2 border rounded-pill py-1d border-color-6 max-width-174 text-lh-sm px-4 d-xl-inline-flex align-items-center">
+                                    <div class="font-size-12 text-gray-5">Remaining to  Free Delivery:</div>
+                                    <div class="font-size-15 font-weight-bold text-blue ml-2">$120</div>
+                                </div>
+                                <div class="d-inline-flex ml-auto">
                                     <ul class="d-flex list-unstyled mb-0 align-items-center">
                                         <!-- Search -->
                                         <li class="col d-xl-none px-2 px-sm-3 position-static">
@@ -628,18 +639,18 @@
                                     <!-- Card -->
                                     <div class="card border-0">
                                         <div class="card-header card-collapse border-0" id="basicsHeadingOne">
-                                            <button type="button" class="btn-link btn-remove-focus btn-block d-flex card-btn py-3 text-lh-1 px-4 shadow-none btn-primary rounded-top-lg border-0 font-weight-bold text-gray-90"
+                                            <button type="button" class="btn-link btn-remove-focus btn-block d-flex card-btn py-3 text-lh-1 px-4 shadow-none btn-primary rounded-top-10 border-0 font-weight-bold text-gray-90"
                                                 data-toggle="collapse"
                                                 data-target="#basicsCollapseOne"
                                                 aria-expanded="true"
                                                 aria-controls="basicsCollapseOne">
-                                                <span class="ml-0 text-gray-90 mr-2">
-                                                    <span class="fa fa-list-ul"></span>
+                                                <span class="pl-1 text-gray-90">Shop by Department</span>
+                                                <span class="text-gray-90 ml-auto">
+                                                    <span class="ec ec-arrow-down-search"></span>
                                                 </span>
-                                                <span class="pl-1 text-gray-90">All Departments</span>
                                             </button>
                                         </div>
-                                        <div id="basicsCollapseOne" class="collapse show vertical-menu"
+                                        <div id="basicsCollapseOne" class="collapse vertical-menu"
                                             aria-labelledby="basicsHeadingOne"
                                             data-parent="#basicsAccordion">
                                             <div class="card-body p-0">
@@ -1108,6 +1119,12 @@
                                         </li>
                                         <!-- End Gift Cards -->
 
+                                        <!-- About Us -->
+                                        <li class="nav-item u-header__nav-item">
+                                            <a class="nav-link u-header__nav-link" href="about.html" aria-haspopup="true" aria-expanded="false">About Us</a>
+                                        </li>
+                                        <!-- End About Us -->
+
                                         <!-- Button -->
                                         <li class="nav-item u-header__nav-last-item">
                                             <a class="text-gray-90" href="#" target="_blank">
@@ -1132,104 +1149,120 @@
         <!-- ========== MAIN CONTENT ========== -->
         <main id="content" role="main">
             <!-- Slider Section -->
-            <div class="mb-5">
-                <div class="bg-img-hero" style="background-image: url(../../assets/img/1920X422/img1.jpg);">
-                    <div class="container min-height-420 overflow-hidden">
-                        <div class="js-slick-carousel u-slick"
-                            data-pagi-classes="text-center position-absolute right-0 bottom-0 left-0 u-slick__pagination u-slick__pagination--long justify-content-start mb-3 mb-md-4 offset-xl-3 pl-2 pb-1">
-                            <div class="js-slide bg-img-hero-center">
-                                <div class="row min-height-420 py-7 py-md-0">
-                                    <div class="offset-xl-3 col-xl-4 col-6 mt-md-8">
-                                        <h1 class="font-size-64 text-lh-57 font-weight-light"
+            <div class="bg-primary">
+                <div class="container min-height-420 overflow-hidden">
+                    <div class="js-slick-carousel u-slick"
+                        data-pagi-classes="text-center d-xl-none right-0 bottom-0 left-0 u-slick__pagination u-slick__pagination--dark u-slick__pagination--long justify-content-start mt-4 mb-4 mt-md-5 mb-md-4 offset-xl-3 pl-2 pb-1 ml-2">
+                        <div class="js-slide bg-img-hero-center">
+                            <div class="row height-410-xl mx-0 align-items-center">
+                                <div class="col-md-4 mt-6 mt-md-0 mb-4 mb-md-0">
+                                    <div class="ml-wd-5">
+                                        <h3 class="font-size-sl-48 font-weight-light mb-1 text-lh-1"
+                                            data-scs-animation-delay="50"
+                                            data-scs-animation-in="fadeInUp">LIMITED
+                                        </h3>
+                                        <h1 class="display-3 text-lh-1 font-weight-light mb-2 mb-lg-3 mb-wd-4"
+                                            data-scs-animation-delay="100"
                                             data-scs-animation-in="fadeInUp">
-                                            THE NEW <span class="d-block font-size-55">STANDARD</span>
+                                            WEEK DEAL</span>
                                         </h1>
-                                        <h6 class="font-size-15 font-weight-bold mb-3"
+                                        <h6 class="font-size-xl-15 font-weight-bold mb-0"
                                             data-scs-animation-in="fadeInUp"
-                                            data-scs-animation-delay="200">UNDER FAVORABLE SMARTWATCHES
+                                            data-scs-animation-delay="200">HURRY UP BEFORE OFFER WILL END
                                         </h6>
-                                        <div class="mb-4"
-                                            data-scs-animation-in="fadeInUp"
-                                            data-scs-animation-delay="300">
-                                            <span class="font-size-13">FROM</span>
-                                            <div class="font-size-50 font-weight-bold text-lh-45">
-                                                <sup class="">$</sup>749<sup class="">99</sup>
-                                            </div>
-                                        </div>
-                                        <a href="../shop/single-product-fullwidth.html" class="btn btn-primary transition-3d-hover rounded-lg font-weight-normal py-2 px-md-7 px-3 font-size-16"
-                                            data-scs-animation-in="fadeInUp"
-                                            data-scs-animation-delay="400">
-                                            Start Buying
-                                        </a>
                                     </div>
-                                    <div class="col-xl-5 col-6  d-flex align-items-center"
-                                        data-scs-animation-in="zoomIn"
-                                        data-scs-animation-delay="500">
-                                        <img class="img-fluid" src="../../assets/img/416X420/img1.png" alt="Image Description">
+                                </div>
+                                <div class="col-md-5 d-flex align-items-center ml-auto ml-md-0 mb-4 mb-md-0"
+                                    data-scs-animation-in="fadeInRight"
+                                    data-scs-animation-delay="400">
+                                    <img class="img-fluid" src="../../assets/img/576X310/img1.png" alt="Image Description">
+                                </div>
+                                <div class="col-md-3"
+                                    data-scs-animation-in="fadeInRight"
+                                    data-scs-animation-delay="600">
+                                    <div class="mr-wd-8">
+                                        <h5 class="mb-5 font-size-17 product-item__title text-lh-default"><a href="#" class="text-blue font-weight-bold">Earphones Pods One S Bluetooth + USB 3.0 Cable</a></h5>
+                                        <div class="prodcut-price d-flex align-items-end position-relative text-lh-1 mb-6">
+                                            <del class="font-size-18 tex-gray-6 mb-1 mr-2">$99.00</del>
+                                            <ins class="font-size-34 text-red text-decoration-none">$79.00</ins>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-dark borders-radius-9 border-width-2 px-8 text-lh-23 py-2">Buy Now</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="js-slide bg-img-hero-center" data-animation-delay="0">
-                                <div class="row min-height-420 py-7 py-md-0">
-                                    <div class="offset-xl-3 col-xl-4 col-6 mt-md-8">
-                                        <h1 class="font-size-64 text-lh-57 font-weight-light"
+                        </div>
+                        <div class="js-slide bg-img-hero-center">
+                            <div class="row height-410-xl mx-0 align-items-center">
+                                <div class="col-md-4 mt-6 mt-md-0 mb-4 mb-md-0">
+                                    <div class="ml-wd-5">
+                                        <h3 class="font-size-sl-48 font-weight-light mb-1 text-lh-1"
+                                            data-scs-animation-delay="50"
+                                            data-scs-animation-in="fadeInUp">LIMITED
+                                        </h3>
+                                        <h1 class="display-3 text-lh-1 font-weight-light mb-2 mb-lg-3 mb-wd-4"
+                                            data-scs-animation-delay="100"
                                             data-scs-animation-in="fadeInUp">
-                                            THE NEW <span class="d-block font-size-55">STANDARD</span>
+                                            WEEK DEAL</span>
                                         </h1>
-                                        <h6 class="font-size-15 font-weight-bold mb-3"
+                                        <h6 class="font-size-xl-15 font-weight-bold mb-0"
                                             data-scs-animation-in="fadeInUp"
-                                            data-scs-animation-delay="200">UNDER FAVORABLE SMARTWATCHES
+                                            data-scs-animation-delay="200">HURRY UP BEFORE OFFER WILL END
                                         </h6>
-                                        <div class="mb-4"
-                                            data-scs-animation-in="fadeInUp"
-                                            data-scs-animation-delay="300">
-                                            <span class="font-size-13">FROM</span>
-                                            <div class="font-size-50 font-weight-bold text-lh-45">
-                                                <sup class="">$</sup>749<sup class="">99</sup>
-                                            </div>
-                                        </div>
-                                        <a href="../shop/single-product-fullwidth.html" class="btn btn-primary transition-3d-hover rounded-lg font-weight-normal py-2 px-md-7 px-3 font-size-16"
-                                            data-scs-animation-in="fadeInUp"
-                                            data-scs-animation-delay="400">
-                                            Start Buying
-                                        </a>
                                     </div>
-                                    <div class="col-xl-5 col-6  d-flex align-items-center"
-                                        data-scs-animation-in="fadeInUp"
-                                        data-scs-animation-delay="500">
-                                        <img class="img-fluid" src="../../assets/img/416X420/img2.png" alt="Image Description">
+                                </div>
+                                <div class="col-md-5 d-flex align-items-center ml-auto ml-md-0 mb-4 mb-md-0"
+                                    data-scs-animation-in="fadeInRight"
+                                    data-scs-animation-delay="400">
+                                    <img class="img-fluid" src="../../assets/img/576X310/img1.png" alt="Image Description">
+                                </div>
+                                <div class="col-md-3"
+                                    data-scs-animation-in="fadeInRight"
+                                    data-scs-animation-delay="600">
+                                    <div class="mr-wd-8">
+                                        <h5 class="mb-5 font-size-17 product-item__title text-lh-default"><a href="#" class="text-blue font-weight-bold">Earphones Pods One S Bluetooth + USB 3.0 Cable</a></h5>
+                                        <div class="prodcut-price d-flex align-items-end position-relative text-lh-1 mb-6">
+                                            <del class="font-size-18 tex-gray-6 mb-1 mr-2">$99.00</del>
+                                            <ins class="font-size-34 text-red text-decoration-none">$79.00</ins>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-dark borders-radius-9 border-width-2 px-8 text-lh-23 py-2">Buy Now</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="js-slide bg-img-hero-center" data-animation-delay="0">
-                                <div class="row min-height-420 py-7 py-md-0">
-                                    <div class="offset-xl-3 col-xl-4 col-6 mt-md-8">
-                                        <h1 class="font-size-64 text-lh-57 font-weight-light"
+                        </div>
+                        <div class="js-slide bg-img-hero-center">
+                            <div class="row height-410-xl mx-0 align-items-center">
+                                <div class="col-md-4 mt-6 mt-md-0 mb-4 mb-md-0">
+                                    <div class="ml-wd-5">
+                                        <h3 class="font-size-sl-48 font-weight-light mb-1 text-lh-1"
+                                            data-scs-animation-delay="50"
+                                            data-scs-animation-in="fadeInUp">LIMITED
+                                        </h3>
+                                        <h1 class="display-3 text-lh-1 font-weight-light mb-2 mb-lg-3 mb-wd-4"
+                                            data-scs-animation-delay="100"
                                             data-scs-animation-in="fadeInUp">
-                                            THE NEW <span class="d-block font-size-55">STANDARD</span>
+                                            WEEK DEAL</span>
                                         </h1>
-                                        <h6 class="font-size-15 font-weight-bold mb-3"
+                                        <h6 class="font-size-xl-15 font-weight-bold mb-0"
                                             data-scs-animation-in="fadeInUp"
-                                            data-scs-animation-delay="200">UNDER FAVORABLE SMARTWATCHES
+                                            data-scs-animation-delay="200">HURRY UP BEFORE OFFER WILL END
                                         </h6>
-                                        <div class="mb-4"
-                                            data-scs-animation-in="fadeInUp"
-                                            data-scs-animation-delay="300">
-                                            <span class="font-size-13">FROM</span>
-                                            <div class="font-size-50 font-weight-bold text-lh-45">
-                                                <sup class="">$</sup>749<sup class="">99</sup>
-                                            </div>
-                                        </div>
-                                        <a href="../shop/single-product-fullwidth.html" class="btn btn-primary transition-3d-hover rounded-lg font-weight-normal py-2 px-md-7 px-3 font-size-15"
-                                            data-scs-animation-in="fadeInUp"
-                                            data-scs-animation-delay="400">
-                                            Start Buying
-                                        </a>
                                     </div>
-                                    <div class="col-xl-5 col-6  d-flex align-items-center"
-                                        data-scs-animation-in="fadeInRight"
-                                        data-scs-animation-delay="500">
-                                        <img class="img-fluid" src="../../assets/img/416X420/img3.png" alt="Image Description">
+                                </div>
+                                <div class="col-md-5 d-flex align-items-center ml-auto ml-md-0 mb-4 mb-md-0"
+                                    data-scs-animation-in="fadeInRight"
+                                    data-scs-animation-delay="400">
+                                    <img class="img-fluid" src="../../assets/img/576X310/img1.png" alt="Image Description">
+                                </div>
+                                <div class="col-md-3"
+                                    data-scs-animation-in="fadeInRight"
+                                    data-scs-animation-delay="600">
+                                    <div class="mr-wd-8">
+                                        <h5 class="mb-5 font-size-17 product-item__title text-lh-default"><a href="#" class="text-blue font-weight-bold">Earphones Pods One S Bluetooth + USB 3.0 Cable</a></h5>
+                                        <div class="prodcut-price d-flex align-items-end position-relative text-lh-1 mb-6">
+                                            <del class="font-size-18 tex-gray-6 mb-1 mr-2">$99.00</del>
+                                            <ins class="font-size-34 text-red text-decoration-none">$79.00</ins>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-dark borders-radius-9 border-width-2 px-8 text-lh-23 py-2">Buy Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -1238,6 +1271,167 @@
                 </div>
             </div>
             <!-- End Slider Section -->
+            <!-- Categories Carousel -->
+            <div class="border-top bg-primary border-color-8 mb-4">
+                <div class="container position-relative">
+                    <div class="js-slick-carousel u-slick u-slick--gutters-0 position-static overflow-hidden u-slick-overflow-visble px-1 py-3 text-lh-38"
+                        data-arrows-classes="d-none d-xl-block u-slick__arrow-normal u-slick__arrow-centered--y rounded-circle text-black font-size-30 z-index-2"
+                        data-arrow-left-classes="fa fa-angle-left u-slick__arrow-inner--left left-n16"
+                        data-arrow-right-classes="fa fa-angle-right u-slick__arrow-inner--right right-n20"
+                        data-pagi-classes="d-xl-none text-center right-0 bottom-1 left-0 u-slick__pagination u-slick__pagination--dark u-slick__pagination--long mb-2 z-index-n1 mt-4 pt-1"
+                        data-slides-show="10"
+                        data-slides-scroll="1"
+                        data-responsive='[{
+                          "breakpoint": 1600,
+                          "settings": {
+                            "slidesToShow": 10
+                          }
+                        }, {
+                            "breakpoint": 1200,
+                            "settings": {
+                              "slidesToShow": 6
+                            }
+                        }, {
+                          "breakpoint": 992,
+                          "settings": {
+                            "slidesToShow": 5
+                          }
+                        }, {
+                          "breakpoint": 768,
+                          "settings": {
+                            "slidesToShow": 3
+                          }
+                        }, {
+                          "breakpoint": 554,
+                          "settings": {
+                            "slidesToShow": 2
+                          }
+                        }]'>
+
+                        <div class="js-slide">
+                            <a href="../shop/product-categories-7-column-full-width.html" class="d-block text-center  width-122 mx-auto">
+                                <div class="text-gray-90">
+                                    <i class="ec ec-laptop font-size-30"></i>
+                                </div>
+                                <div class="px-2 pt-2">
+                                    <h6 class="font-weight-semi-bold font-size-13 text-gray-90 mb-0 text-lh-1dot2">Accessories</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="js-slide">
+                            <a href="../shop/product-categories-7-column-full-width.html" class="d-block text-center  width-122 mx-auto">
+                                <div class="text-gray-90">
+                                    <i class="ec ec-smartwatch font-size-30"></i>
+                                </div>
+                                <div class="px-2 pt-2">
+                                    <h6 class="font-weight-semi-bold font-size-13 text-gray-90 mb-0 text-lh-1dot2">Smart Watch</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="js-slide">
+                            <a href="../shop/product-categories-7-column-full-width.html" class="d-block text-center  width-122 mx-auto">
+                                <div class="text-gray-90">
+                                    <i class="ec ec-gamepad font-size-30"></i>
+                                </div>
+                                <div class="px-2 pt-2">
+                                    <h6 class="font-weight-semi-bold font-size-13 text-gray-90 mb-0 text-lh-1dot2">Game Joy stick</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="js-slide">
+                            <a href="../shop/product-categories-7-column-full-width.html" class="d-block text-center  width-122 mx-auto">
+                                <div class="text-gray-90">
+                                    <i class="ec ec-headphones font-size-30"></i>
+                                </div>
+                                <div class="px-2 pt-2">
+                                    <h6 class="font-weight-semi-bold font-size-13 text-gray-90 mb-0 text-lh-1dot2">Headphones</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="js-slide">
+                            <a href="../shop/product-categories-7-column-full-width.html" class="d-block text-center  width-122 mx-auto">
+                                <div class="text-gray-90">
+                                    <i class="ec ec-tvs font-size-30"></i>
+                                </div>
+                                <div class="px-2 pt-2">
+                                    <h6 class="font-weight-semi-bold font-size-13 text-gray-90 mb-0 text-lh-1dot2">LED TV</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="js-slide">
+                            <a href="../shop/product-categories-7-column-full-width.html" class="d-block text-center  width-122 mx-auto">
+                                <div class="text-gray-90">
+                                    <i class="ec ec-drone font-size-30"></i>
+                                </div>
+                                <div class="px-2 pt-2">
+                                    <h6 class="font-weight-semi-bold font-size-13 text-gray-90 mb-0 text-lh-1dot2">Drone</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="js-slide">
+                            <a href="../shop/product-categories-7-column-full-width.html" class="d-block text-center  width-122 mx-auto">
+                                <div class="text-gray-90">
+                                    <i class="ec ec-cameras font-size-30"></i>
+                                </div>
+                                <div class="px-2 pt-2">
+                                    <h6 class="font-weight-semi-bold font-size-13 text-gray-90 mb-0 text-lh-1dot2">DSLR Camera</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="js-slide">
+                            <a href="../shop/product-categories-7-column-full-width.html" class="d-block text-center  width-122 mx-auto">
+                                <div class="text-gray-90">
+                                    <i class="ec ec-speaker font-size-30"></i>
+                                </div>
+                                <div class="px-2 pt-2">
+                                    <h6 class="font-weight-semi-bold font-size-13 text-gray-90 mb-0 text-lh-1dot2">Audio Speakers</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="js-slide">
+                            <a href="../shop/product-categories-7-column-full-width.html" class="d-block text-center  width-122 mx-auto">
+                                <div class="text-gray-90">
+                                    <i class="ec ec-smartphones font-size-30"></i>
+                                </div>
+                                <div class="px-2 pt-2">
+                                    <h6 class="font-weight-semi-bold font-size-13 text-gray-90 mb-0 text-lh-1dot2">Smartphones</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="js-slide">
+                            <a href="../shop/product-categories-7-column-full-width.html" class="d-block text-center  width-122 mx-auto">
+                                <div class="text-gray-90">
+                                    <i class="ec ec-laptop font-size-30"></i>
+                                </div>
+                                <div class="px-2 pt-2">
+                                    <h6 class="font-weight-semi-bold font-size-13 text-gray-90 mb-0 text-lh-1dot2">Accessories</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="js-slide">
+                            <a href="../shop/product-categories-7-column-full-width.html" class="d-block text-center  width-122 mx-auto">
+                                <div class="text-gray-90">
+                                    <i class="ec ec-cameras font-size-30"></i>
+                                </div>
+                                <div class="px-2 pt-2">
+                                    <h6 class="font-weight-semi-bold font-size-13 text-gray-90 mb-0 text-lh-1dot2">DSLR Camera</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="js-slide">
+                            <a href="../shop/product-categories-7-column-full-width.html" class="d-block text-center  width-122 mx-auto">
+                                <div class="text-gray-90">
+                                    <i class="ec ec-gamepad font-size-30"></i>
+                                </div>
+                                <div class="px-2 pt-2">
+                                    <h6 class="font-weight-semi-bold font-size-13 text-gray-90 mb-0 text-lh-1dot2">Game Joy stick</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Categories Carousel -->
             <div class="container">
                 <!-- Banner -->
                 <div class="mb-5">
