@@ -92,6 +92,10 @@ body {
   background-color: #fff;
 }
 
+.ec-search:before {
+  color: white;
+}
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
@@ -20815,6 +20819,15 @@ a.text-dark:hover, a.text-dark:focus {
 a.text-cyan:hover, a.text-cyan:focus {
   color: #1294c1 !important;
 }
+
+.text-violet1 {
+  color: #dc446f !important;
+}
+
+a.text-violet1:hover, a.text-blue:focus {
+  color: #ff9a53 !important;
+}
+
 
 .text-blue {
   color: #0077d0 !important;
